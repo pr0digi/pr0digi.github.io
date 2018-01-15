@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"/><title>InvoiceBuilder API</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/><link href="app-334201a3d0e944d0dc5d.css" rel="stylesheet"/></head><body><div id="app-root"><div id="wrapper" data-reactroot="" data-reactid="1" data-react-checksum="79513654"><nav id="sidebar-wrapper" data-reactid="2"><div class="search" data-reactid="3"><input type="text" placeholder="Search..." value="" data-reactid="4"/></div><ul class="sidebar-nav" data-reactid="5"><li class="sidebar-category" data-reactid="6"><a href="#invoice" data-reactid="7">Invoice</a></li><li class="" data-reactid="8"><a href="#invoice-všetky-časti-faktúry" data-reactid="9">Všetky časti faktúry</a></li></ul></nav><div id="page-content-wrapper" data-reactid="10"><div class="container-fluid" data-reactid="11"><div class="row" data-reactid="12"><div class="col-lg-12" data-reactid="13"><h1 data-reactid="14">InvoiceBuilder API</h1><article class="panel panel-primary" data-reactid="15"><div class="panel-heading" data-reactid="16"><div id="invoice" data-reactid="17"></div><h2 data-reactid="18">Invoice</h2></div><div class="panel-body" data-reactid="19"><h3 data-reactid="20">FAKTURACE ZA SDRUŽENÉ SLUŽBY DODÁVKY PLYNU</h3><header id="invoice-properties" data-reactid="21"><p data-reactid="22"><a class="btn btn-info" data-reactid="23"><span data-reactid="24">Show</span><!-- react-text: 25 --> <!-- /react-text --><!-- react-text: 26 -->properties and constraints defined on the object<!-- /react-text --></a></p></header></div><div class="list-group" data-reactid="27"><section id="invoice-všetky-časti-faktúry" class="list-group-item" data-reactid="28"><h3 data-reactid="29"><div class="label label-success" data-reactid="30">GET</div><!-- react-text: 31 --> <!-- /react-text --><div class="endpoint-title" data-reactid="32">Všetky časti faktúry</div></h3><div data-reactid="33"><p>Objekt obsahujúci všetky časti faktúry</p>
+</div><pre data-reactid="34"><!-- react-text: 35 -->GET<!-- /react-text --><!-- react-text: 36 --> <!-- /react-text --><!-- react-text: 37 -->/faktury/id<!-- /react-text --></pre><h4 data-reactid="38">cURL</h4><div data-reactid="39"><pre data-reactid="40">curl -X GET &quot;https://api.example.com/example/v1//faktury/id&quot; \
+     -H &quot;Content-Type: application/json&quot;</pre></div><h4 data-reactid="41">Response</h4><div data-reactid="42"><pre data-reactid="43">{
+  &quot;id&quot;: 1,
+  &quot;partA&quot;: {
+    &quot;dodavatel&quot;: {
+      &quot;nazov&quot;: &quot;Axpo Trading AG&quot;,
+      &quot;ulicaCislo&quot;: &quot;Parkstrasse 23&quot;,
+      &quot;psc&quot;: &quot;CH-5401&quot;,
+      &quot;mesto&quot;: &quot;Baden&quot;,
+      &quot;stat&quot;: &quot;Schweiz&quot;,
+      &quot;ic&quot;: &quot;CHE-105.779.348&quot;,
+      &quot;icDPH&quot;: &quot;CHE-105.779.348 MWST&quot;,
+      &quot;obchodniRejstrik&quot;: &quot;Commercial Register of canton Zürich&quot;
+    },
+    &quot;odberatel&quot;: {
+      &quot;nazov&quot;: &quot;Axpo Trading AG&quot;,
+      &quot;ulicaCislo&quot;: &quot;Parkstrasse 23&quot;,
+      &quot;psc&quot;: &quot;CH-5401&quot;,
+      &quot;mesto&quot;: &quot;Baden&quot;,
+      &quot;stat&quot;: &quot;Schweiz&quot;,
+      &quot;ic&quot;: &quot;CHE-105.779.348&quot;,
+      &quot;icDPH&quot;: &quot;CHE-105.779.348 MWST&quot;,
+      &quot;bankovniUcet&quot;: &quot;SK31 1200 0000 1987 4263 7541&quot;
+    },
+    &quot;detailPlatby&quot;: {
+      &quot;variabilnySymbol&quot;: &quot;91125945-7&quot;,
+      &quot;datumSplatnosti&quot;: &quot;2017-11-30T00:00:00.000Z&quot;,
+      &quot;datumVystaveni&quot;: &quot;2017-10-18T00:00:00.000Z&quot;,
+      &quot;datumZdanitelnehoPlneni&quot;: &quot;2017-10-01T00:00:00.000Z&quot;,
+      &quot;obdobiOd&quot;: &quot;2017-09-01T00:00:00.000Z&quot;,
+      &quot;obdobiDo&quot;: &quot;2017-09-30T00:00:00.000Z&quot;,
+      &quot;formaUhrady&quot;: &quot;bankovní převod&quot;,
+      &quot;placeniDPH&quot;: &quot;Daň odvede zákazník&quot;
+    }
+  }
+}</pre></div></section></div></article><article class="panel panel-primary" data-reactid="44"><div class="panel-heading" data-reactid="45"><div id="dodávateľ" data-reactid="46"></div><h2 data-reactid="47">Dodávateľ</h2></div><div class="panel-body" data-reactid="48"><h3 data-reactid="49"></h3><header id="dodávateľ-properties" data-reactid="50"><p data-reactid="51"><a class="btn btn-info" data-reactid="52"><span data-reactid="53">Show</span><!-- react-text: 54 --> <!-- /react-text --><!-- react-text: 55 -->properties and constraints defined on the object<!-- /react-text --></a></p></header></div><div class="list-group" data-reactid="56"></div></article><article class="panel panel-primary" data-reactid="57"><div class="panel-heading" data-reactid="58"><div id="odberateľ" data-reactid="59"></div><h2 data-reactid="60">Odberateľ</h2></div><div class="panel-body" data-reactid="61"><h3 data-reactid="62"></h3><header id="odberateľ-properties" data-reactid="63"><p data-reactid="64"><a class="btn btn-info" data-reactid="65"><span data-reactid="66">Show</span><!-- react-text: 67 --> <!-- /react-text --><!-- react-text: 68 -->properties and constraints defined on the object<!-- /react-text --></a></p></header></div><div class="list-group" data-reactid="69"></div></article><article class="panel panel-primary" data-reactid="70"><div class="panel-heading" data-reactid="71"><div id="detail-platby" data-reactid="72"></div><h2 data-reactid="73">Detail platby</h2></div><div class="panel-body" data-reactid="74"><h3 data-reactid="75">Základné informácie o faktúre.</h3><header id="detail-platby-properties" data-reactid="76"><p data-reactid="77"><a class="btn btn-info" data-reactid="78"><span data-reactid="79">Show</span><!-- react-text: 80 --> <!-- /react-text --><!-- react-text: 81 -->properties and constraints defined on the object<!-- /react-text --></a></p></header></div><div class="list-group" data-reactid="82"></div></article></div></div></div></div></div></div><script src="app-334201a3d0e944d0dc5d.js" type="text/javascript"></script></body></html>
